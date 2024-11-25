@@ -14,8 +14,17 @@ final class VideosGridViewController: UIViewController {
     private let collectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout: UICollectionViewFlowLayout())
-    private let viewModel: VideosGridViewModel = VideosGridViewModel()
+    private let viewModel: VideosGridViewModel
     private let disposeBag = DisposeBag()
+    
+    init(viewModel: VideosGridViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

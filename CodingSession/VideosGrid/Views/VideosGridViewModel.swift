@@ -15,8 +15,10 @@ final class VideosGridViewModel {
     private let titleConverter = VideoGridItemTitleConverter()
     private let disposeBag = DisposeBag()
     
-    init(videosProvider: VideoAssetsProviding = VideoAssetsProvider(),
-         imagePreviewsProvider: ImagePreviewProviding = ImagePreviewProvider()) {
+    init(
+        videosProvider: VideoAssetsProviding,
+        imagePreviewsProvider: ImagePreviewProviding
+    ) {
         self.videosProvider = videosProvider
         self.imagePreviewsProvider = imagePreviewsProvider
     }
