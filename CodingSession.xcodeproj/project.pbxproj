@@ -98,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				40728FA82CF4BED20029A354 /* VideosGridViewController.swift */,
-				40728FAA2CF4BF040029A354 /* VideosGridViewModel.swift */,
 				40728FA02CF4BB370029A354 /* VideoGridItemCell.swift */,
 			);
 			path = Views;
@@ -117,6 +116,7 @@
 			children = (
 				40728FAE2CF4C54C0029A354 /* Assembler */,
 				40728FA42CF4BB790029A354 /* Views */,
+				40728FC72CF4E3080029A354 /* VIewModel */,
 				40728FA52CF4BB830029A354 /* Models */,
 				40728F9F2CF4BB130029A354 /* Services */,
 			);
@@ -129,6 +129,14 @@
 				40728FAF2CF4C55B0029A354 /* VideosGridAssembler.swift */,
 			);
 			path = Assembler;
+			sourceTree = "<group>";
+		};
+		40728FC72CF4E3080029A354 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				40728FAA2CF4BF040029A354 /* VideosGridViewModel.swift */,
+			);
+			path = VIewModel;
 			sourceTree = "<group>";
 		};
 		D3D03FA82AF27571006BD5C8 = {
