@@ -12,6 +12,8 @@
 		40728FA12CF4BB370029A354 /* VideoGridItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40728FA02CF4BB370029A354 /* VideoGridItemCell.swift */; };
 		40728FA32CF4BB640029A354 /* VideoGridItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40728FA22CF4BB640029A354 /* VideoGridItemModel.swift */; };
 		40728FA72CF4BCB80029A354 /* VideoGridItemTitleConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40728FA62CF4BCB80029A354 /* VideoGridItemTitleConverter.swift */; };
+		40728FA92CF4BED20029A354 /* VideosGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40728FA82CF4BED20029A354 /* VideosGridViewController.swift */; };
+		40728FAB2CF4BF040029A354 /* VideosGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40728FAA2CF4BF040029A354 /* VideosGridViewModel.swift */; };
 		D3D03FB52AF27571006BD5C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D03FB42AF27571006BD5C8 /* AppDelegate.swift */; };
 		D3D03FB72AF27571006BD5C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D03FB62AF27571006BD5C8 /* SceneDelegate.swift */; };
 		D3D03FB92AF27571006BD5C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D03FB82AF27571006BD5C8 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		40728FA02CF4BB370029A354 /* VideoGridItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGridItemCell.swift; sourceTree = "<group>"; };
 		40728FA22CF4BB640029A354 /* VideoGridItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGridItemModel.swift; sourceTree = "<group>"; };
 		40728FA62CF4BCB80029A354 /* VideoGridItemTitleConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGridItemTitleConverter.swift; sourceTree = "<group>"; };
+		40728FA82CF4BED20029A354 /* VideosGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosGridViewController.swift; sourceTree = "<group>"; };
+		40728FAA2CF4BF040029A354 /* VideosGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosGridViewModel.swift; sourceTree = "<group>"; };
 		D3D03FB12AF27571006BD5C8 /* CodingSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D03FB42AF27571006BD5C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D03FB62AF27571006BD5C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		40728FA42CF4BB790029A354 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				40728FA82CF4BED20029A354 /* VideosGridViewController.swift */,
+				40728FAA2CF4BF040029A354 /* VideosGridViewModel.swift */,
 				40728FA02CF4BB370029A354 /* VideoGridItemCell.swift */,
 			);
 			path = Views;
@@ -208,9 +214,11 @@
 				D3D03FB92AF27571006BD5C8 /* ViewController.swift in Sources */,
 				40728F9C2CF4BABB0029A354 /* VideoAssetsProvider.swift in Sources */,
 				D3D03FB52AF27571006BD5C8 /* AppDelegate.swift in Sources */,
+				40728FA92CF4BED20029A354 /* VideosGridViewController.swift in Sources */,
 				40728FA32CF4BB640029A354 /* VideoGridItemModel.swift in Sources */,
 				40728F9E2CF4BAEE0029A354 /* ImagePreviewProvider.swift in Sources */,
 				40728FA72CF4BCB80029A354 /* VideoGridItemTitleConverter.swift in Sources */,
+				40728FAB2CF4BF040029A354 /* VideosGridViewModel.swift in Sources */,
 				D3D03FB72AF27571006BD5C8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
