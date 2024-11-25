@@ -88,6 +88,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		40728FAD2CF4C31E0029A354 /* VideosGrid */ = {
+			isa = PBXGroup;
+			children = (
+				40728FA42CF4BB790029A354 /* Views */,
+				40728FA52CF4BB830029A354 /* Models */,
+				40728F9F2CF4BB130029A354 /* Services */,
+			);
+			path = VideosGrid;
+			sourceTree = "<group>";
+		};
 		D3D03FA82AF27571006BD5C8 = {
 			isa = PBXGroup;
 			children = (
@@ -111,9 +121,7 @@
 				D3D03FB42AF27571006BD5C8 /* AppDelegate.swift */,
 				D3D03FB62AF27571006BD5C8 /* SceneDelegate.swift */,
 				D3D03FB82AF27571006BD5C8 /* ViewController.swift */,
-				40728FA42CF4BB790029A354 /* Views */,
-				40728FA52CF4BB830029A354 /* Models */,
-				40728F9F2CF4BB130029A354 /* Services */,
+				40728FAD2CF4C31E0029A354 /* VideosGrid */,
 				D3D03FBA2AF27571006BD5C8 /* Main.storyboard */,
 				D3D03FBD2AF27572006BD5C8 /* Assets.xcassets */,
 				D3D03FBF2AF27572006BD5C8 /* LaunchScreen.storyboard */,

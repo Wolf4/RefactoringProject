@@ -36,7 +36,7 @@ final class VideoGridItemCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        print("reuse \(disposeBag)")
+        disposeBag = DisposeBag()
     }
     
     private func setupUI() {
@@ -59,9 +59,5 @@ final class VideoGridItemCell: UICollectionViewCell {
         model.imageDriver
             .drive(thumbImageView.rx.image)
             .disposed(by: disposeBag)
-        
-        model.imageDriver.drive { image in
-            print("image drives \(model.title ?? "nil")")
-        }
     }
 }
