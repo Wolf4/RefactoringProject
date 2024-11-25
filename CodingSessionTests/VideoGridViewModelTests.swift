@@ -60,6 +60,14 @@ final class VideoGridViewModelTests: XCTestCase {
             MockedPHAsset(duration: 9000),
             MockedPHAsset(duration: 86401),
         ]
+        
+        mockedVideosProvider.mockedAuthorizationValue = true
+        
+        let results = try sut
+            .loadItems()
+            .toBlocking()
+            .single()
+        
         let expectedTitles = [
             "01:59:59",
             "00:00:30",
@@ -68,15 +76,13 @@ final class VideoGridViewModelTests: XCTestCase {
             "24:00:01"
         ]
         
-        mockedVideosProvider.mockedAuthorizationValue = true
-        
-        let results = try sut
-            .loadItems()
-            .toBlocking()
-            .single()
-        results.enumerated().forEach { index, actualResult in
+        XCTAssertEqual(results.count, expectedTitles.count)
+        try results.enumerated().forEach { index, actualResult in
             let expectedResult = expectedTitles[index]
             XCTAssertEqual(expectedResult, actualResult.title)
+            let resultImage = try actualResult.imageDriver.toBlocking().single()
+            XCTAssertNotNil(resultImage)
+            XCTAssertEqual(resultImage, mockedPreviewsProvider.mockedUIImage)
         }
     }
 }
